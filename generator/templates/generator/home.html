@@ -5,7 +5,7 @@
 <div class="container text-center">
 <h1>Генератор паролей</h1>
 <form action="password" method="get">
-
+<hr>
   Длинна пароля:  <select name="length">
       <option value="6">6</option>
       <option value="7">7</option>
@@ -24,14 +24,19 @@
       <option value="20">20</option>
 
     </select>
-  <br>
-    <input type="checkbox" name="uppercase"> Верхний регистр  
-  <br>
-    <input type="checkbox" name="special"> Спецсимволы
-  <br>
-    <input type="checkbox" name="numbers"> Цифры
-  <br>
-  <br>
+    <div class="container text-left">
+      <br>
+        <input type="checkbox" name="uppercase"> Верхний регистр
+      <br>
+        <input type="checkbox" name="special"> Спецсимволы
+      <br>
+        <input type="checkbox" name="numbers"> Цифры
+      <br>
+        <hr>
+      <br>
+
+    </div>
+
     <input class="btn btn-primary" type="submit" value="СГЕНЕРИРОВАТЬ">
 </form>
 <button class="btn btn-primary" type="button" name="button"><a style="text-decoration:none; color:white;" href='{% url "info" %}'>INFO</a></button>
